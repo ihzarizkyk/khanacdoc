@@ -50,3 +50,20 @@ JOIN persons a
 ON a.id = friends.person1_id
 JOIN persons b
 ON b.id = friends.person2_id;
+
+/* Dynamic Documents Challenge */
+UPDATE documents SET author="Jackie Daper" WHERE author="Jackie Paper";
+SELECT * FROM documents;
+DELETE FROM documents WHERE title="Things I'm Afraid Of";
+SELECT * FROM documents;
+
+/* Clothing alterations Challenge */
+ALTER TABLE clothes ADD price INTEGER;
+SELECT * FROM clothes;
+UPDATE clothes SET price = 10 WHERE id=1;
+UPDATE clothes SET price = 20 WHERE id=2;
+UPDATE clothes SET price = 30 WHERE id=3;
+SELECT * FROM clothes;
+INSERT INTO clothes(type,design,price) VALUES("dress","bluesky",40);
+SELECT * FROM clothes;
+
